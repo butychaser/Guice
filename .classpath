@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="guice-aop-1/src/main/java"/>
+	<classpathentry kind="src" path="guice-aop-1/src/test/java"/>
+	<classpathentry kind="src" path="guice-aop-2/src/main/java"/>
+	<classpathentry kind="src" path="guice-aop-2/src/test/java"/>
+	<classpathentry kind="src" path="guice-tutorial"/>
+	<classpathentry kind="src" path="design-pattern"/>
+	<classpathentry kind="src" path="concurrency"/>
+	<classpathentry kind="src" path="annotation"/>
+	<classpathentry kind="src" path="generics"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/guice-assistedinject-3.0.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/javax.inject-1.jar"/>
+	<classpathentry kind="lib" path="lib/fast-md5-2.5.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
