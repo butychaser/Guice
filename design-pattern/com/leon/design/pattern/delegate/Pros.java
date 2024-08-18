@@ -1,5 +1,6 @@
 package com.leon.design.pattern.delegate;
 
+//public class AnotherPros<T extends IPros<T>> implements IPros<T>
 public class Pros implements IPros<Pros>
 {
     @Override
@@ -14,10 +15,9 @@ public class Pros implements IPros<Pros>
         System.out.println("Pros one Execute command!");
     }
 
-    @Override
     public String toString ()
     {
-        return "Pros one Collect result!";
+        return "This is a Pros.";
     }
 
 }

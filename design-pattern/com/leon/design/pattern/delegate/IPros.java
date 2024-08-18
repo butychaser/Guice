@@ -5,4 +5,5 @@ public interface IPros<T>
     public void execCommand ();
 
     public T collectResult ();
+
 }

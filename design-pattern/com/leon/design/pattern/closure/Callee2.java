@@ -28,6 +28,7 @@ public class Callee2
         {
             //Magic wand waving
             Callee2.this.increase();
+
         }
 
     }

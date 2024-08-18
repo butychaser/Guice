@@ -1,6 +1,6 @@
 package com.leon.design.pattern.delegate;
 
-public class Mer<T>
+public class Mer<T> implements IMer<T>
 {
     final IPros<T> _delegate;
 

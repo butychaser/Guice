@@ -10,7 +10,7 @@ public class Whore implements AdultFemale
 
     }
 
-    public void oralService ()
+    public void entertain ()
     {
         System.out.println("Lousy Annul Bang.");
 

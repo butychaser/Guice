@@ -17,10 +17,10 @@ public class CheckOutTask<T> implements Runnable
         try
         {
             T item = _pool.checkOut();
-            System.out.println(this+"check out"+item);
+            System.out.println(this+"check out "+item);
             TimeUnit.SECONDS.sleep(1);
             _pool.checkIn(item);
-            System.out.println(this+"check in"+item);
+            System.out.println(this+"check in "+item);
         }
         catch (InterruptedException e)
         {

@@ -1,6 +1,7 @@
 package com.leon.design.pattern.delegate;
 
-public class AnotherPros<T extends IPros<T>> implements IPros<T>
+//public class Pros implements IPros<Pros>
+public class AnotherPros<List extends IPros<List>> implements IPros<List>
 {
 
     public void execCommand ()
@@ -11,17 +12,16 @@ public class AnotherPros<T extends IPros<T>> implements IPros<T>
 
     @SuppressWarnings("unchecked")
     @Override
-    public T collectResult ()
+    public List collectResult ()
     {
         System.out.println("Another Pros Collect result!");
-        return (T) this;
+        return (List) this;
 
     }
 
-    @Override
     public String toString ()
     {
-        return "Another Pros Collect result!";
+        return "This is a Another.";
     }
 
 }

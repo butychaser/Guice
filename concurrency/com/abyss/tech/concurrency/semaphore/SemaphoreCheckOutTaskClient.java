@@ -2,10 +2,7 @@ package com.abyss.tech.concurrency.semaphore;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Executor;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class SemaphoreCheckOutTaskClient
 {
@@ -19,22 +16,19 @@ public class SemaphoreCheckOutTaskClient
 //        List<Fat> fatList = new ArrayList<>();
 //        fatList.add(pool.checkOut());
 //        pool.checkOut();
-        
-        Future<?> retVal = executor.submit(
-            new Runnable(){
-                public void run()
-                {
-                    try
-                    {
-                        pool.checkOut();
-                    }
-                    catch (InterruptedException e)
-                    {
-                        // TODO Auto-generated catch block
-                        System.out.println("checkOut Interrupted");
-                    } 
-                }
-            });
+
+        CompletableFuture<?> retVal1 = CompletableFuture.supplyAsync(()-> {
+            try
+            {
+                return pool.checkOut();
+            }
+            catch (InterruptedException e)
+            {
+                // TODO Auto-generated catch block
+                System.out.println("checkOut Interrupted");
+            }
+            return null;
+        }, executor);
           
         //retVal.cancel(true);
         executor.shutdown();

@@ -10,7 +10,7 @@ public class Prostitute implements AdultFemale
 
     }
 
-    public void GFEService ()
+    public void amuze ()
     {
         System.out.println("Girl Friend Experience.");
     }

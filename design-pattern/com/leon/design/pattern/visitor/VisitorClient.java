@@ -5,7 +5,7 @@ import java.util.List;
 
 public class VisitorClient
 {
-    public static void main (String[] argv)
+    public static void main (String[] args)
     {
         List<AdultFemale> women = Arrays.asList(new Prostitute(), new Whore(), new Housewife());
         AdultMale man = new John();
